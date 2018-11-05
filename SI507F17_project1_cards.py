@@ -22,7 +22,9 @@ class Card(object):
 
     def __str__(self):
 
+
         return "{} of {}".format(self.rank, self.suit)
+
 
 
 
@@ -40,7 +42,9 @@ class Deck(object):
         for card in self.cards:
             total.append(card.__str__())
         # shows up in whatever order the cards are in
+
         return "{rank} of {suit}".format({"rank": self.rank, "suit": self.suit }) # returns a multi-line string listing each card
+
 
     def pop_card(self, i=-1):
         return self.cards.pop(i) # this card is no longer in the deck -- taken off
@@ -67,6 +71,7 @@ class Deck(object):
         for i in range(hand_size):
 
             hand_cards.append(self.pop_card())
+
 
         return hand_cards
 
