@@ -22,10 +22,17 @@ class Card(object):
 
     def __str__(self):
 <<<<<<< HEAD
+<<<<<<< HEAD
         return "{} of {}".format(self.rank, self.suit) 
 =======
         return "{} of {}".format(self.rank_num,self.suit)
 >>>>>>> d3be1100b58e20d1ea8a990fd71e049883ae79f8
+=======
+
+        return "{} of {}".format(self.rank, self.suit) 
+
+
+>>>>>>> 4de11653c4429fc5d7c0229e2fe1e850334b4861
 
 class Deck(object):
     def __init__(self): # Don't need any input to create a deck of cards
@@ -67,10 +74,16 @@ class Deck(object):
         hand_cards = []
         for i in range(hand_size):
 <<<<<<< HEAD
+<<<<<<< HEAD
             hand_cards.append(self.pop_card(i))
 =======
             hand_cards.append(self.pop_card())
 >>>>>>> d3be1100b58e20d1ea8a990fd71e049883ae79f8
+=======
+
+            hand_cards.append(self.pop_card())
+
+>>>>>>> 4de11653c4429fc5d7c0229e2fe1e850334b4861
         return hand_cards
 
 
