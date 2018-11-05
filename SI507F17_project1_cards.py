@@ -22,6 +22,7 @@ class Card(object):
 
     def __str__(self):
 
+
         return "{} of {}".format(self.rank, self.suit)
 
 
@@ -69,7 +70,6 @@ class Deck(object):
         for i in range(hand_size):
 
             hand_cards.append(self.pop_card())
-
 
 
         return hand_cards
