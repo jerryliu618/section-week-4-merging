@@ -21,18 +21,12 @@ class Card(object):
         self.rank_num = rank # To handle winning comparison
 
     def __str__(self):
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return "{} of {}".format(self.rank, self.suit) 
-=======
-        return "{} of {}".format(self.rank_num,self.suit)
->>>>>>> d3be1100b58e20d1ea8a990fd71e049883ae79f8
-=======
 
-        return "{} of {}".format(self.rank, self.suit) 
+        return "{} of {}".format(self.rank, self.suit)
 
 
->>>>>>> 4de11653c4429fc5d7c0229e2fe1e850334b4861
+
+
 
 class Deck(object):
     def __init__(self): # Don't need any input to create a deck of cards
@@ -48,7 +42,7 @@ class Deck(object):
         for card in self.cards:
             total.append(card.__str__())
         # shows up in whatever order the cards are in
-        return "\n".join(total) # returns a multi-line string listing each card
+        return "{0} of {1}".format(self.rank,self.suit) # returns a multi-line string listing each card
 
     def pop_card(self, i=-1):
         return self.cards.pop(i) # this card is no longer in the deck -- taken off
@@ -73,17 +67,11 @@ class Deck(object):
     def deal_hand(self, hand_size):
         hand_cards = []
         for i in range(hand_size):
-<<<<<<< HEAD
-<<<<<<< HEAD
-            hand_cards.append(self.pop_card(i))
-=======
-            hand_cards.append(self.pop_card())
->>>>>>> d3be1100b58e20d1ea8a990fd71e049883ae79f8
-=======
 
             hand_cards.append(self.pop_card())
 
->>>>>>> 4de11653c4429fc5d7c0229e2fe1e850334b4861
+
+
         return hand_cards
 
 
